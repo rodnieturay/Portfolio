@@ -1,0 +1,183 @@
+j<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodnie Turay Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('hero.jpg');
+            background-size: cover;
+            color: white;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rodnie Turay Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Discover my work and projects</p>
+    <button onclick="location.href='#portfolio'">View My Work</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Rodnie Turay, a professional web developer with a passion for creating stunning websites.</p>
+    <img src="profile.jpg" alt="John Doe" style="width:150px; border-radius: 50%;">
+    <p>I specialize in creating responsive, user-friendly websites that help businesses grow online.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <h3>Hotel Reservation System</h3>
+            <img src="project1.jpg" alt="Project 1" style="width:100%;">
+            <p>Improve Booking reservation</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Car maintenance monitoring system</h3>
+            <img src="project2.jpg" alt="Project 2" style="width:100%;">
+            <p>a system that can be use to monitor all of the vehicle maintenance schedule or repair.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <p>I offer a range of services to meet your web development needs:</p>
+    <ul>
+        <li>Web Development</li>
+        <li>UI/UX Design</li>
+       
+        <li>Content Management</li>
+    </ul>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+        <p>"Rod is a fantastic developer. He transformed our website and improved our online presence dramatically."</p>
+        <p>- Client Hotel Reservation</p>
+    </div>
+    <div class="testimonial">
+        <p>"I highly recommend Rod for any web development project. He's professional, reliable, and incredibly talented."</p>
+        <p>- Client Car maintenance monitoring System</p>
+    </div>
+    <!-- Add more testimonials as needed -->
+</section>
+
+<section id="blog">
+    <h2>Blog</h2>
+    <p>Check out my latest blog posts:</p>
+    <article>
+        <h3>Blog Post 1</h3>
+        <p>Snippet of blog post 1...</p>
+        <a href="#">Read more</a>
+    </article>
+    <article>
+        <h3>Blog Post 2</h3>
+        <p>Snippet of blog post 2...</p>
+        <a href="#">Read more</a>
+    </article>
+    <!-- Add more blog posts as needed -->
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, please fill out the form below:</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Email: rodnie.turay@gmail.com</p>
+    <p>Phone: (+63)9272692906</p>
+</section>
+
+<footer>
+    <p>2024 Rod. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
